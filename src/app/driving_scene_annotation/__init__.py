@@ -1,0 +1,1 @@
+"""Driving scene annotation demo."""

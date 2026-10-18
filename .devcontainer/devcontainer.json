@@ -1,5 +1,5 @@
 {
-  "name": "Python Template",
+  "name": "demo-vlm-dom",
   "build": {
     "dockerfile": "Dockerfile"
   },
@@ -8,8 +8,8 @@
     "UV_LINK_MODE": "copy"
   },
   "mounts": [
-    "source=${localWorkspaceFolderBasename}-python-template-venv,target=${containerWorkspaceFolder}/.venv,type=volume",
-    "source=${localWorkspaceFolderBasename}-python-template-node-modules,target=${containerWorkspaceFolder}/node_modules,type=volume",
+    "source=${localWorkspaceFolderBasename}-demo-vlm-dom-venv,target=${containerWorkspaceFolder}/.venv,type=volume",
+    "source=${localWorkspaceFolderBasename}-demo-vlm-dom-node-modules,target=${containerWorkspaceFolder}/node_modules,type=volume",
     "source=${localWorkspaceFolderBasename}-uv-cache,target=/home/vscode/.cache/uv,type=volume",
     "source=${localWorkspaceFolderBasename}-npm-cache,target=/home/vscode/.npm,type=volume"
   ],

@@ -18,3 +18,9 @@ wheels/
 
 # Node.js
 node_modules/
+
+# Local demo images
+data/src/*
+!data/src/.gitkeep
+data/dest/*
+!data/dest/.gitkeep

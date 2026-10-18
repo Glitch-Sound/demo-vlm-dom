@@ -1,21 +1,23 @@
 [project]
-name = "python-template"
+name = "demo-vlm-dom"
 version = "0.1.0"
-description = "uv と OpenSpec を利用したモダンな Python CLI 開発用テンプレート"
+description = "走行静止画を VLM と DOM で注釈するローカルデモ"
 readme = "README.md"
 authors = [
     { name = "Glitch" }
 ]
 requires-python = ">=3.13,<3.14"
 dependencies = [
+    "httpx>=0.28.1",
     "loguru>=0.7.3",
+    "pillow>=13.0.0",
     "pydantic-settings>=2.15.0",
     "rich>=15.0.0",
     "typer>=0.27.1",
 ]
 
 [project.scripts]
-python-template = "app:main"
+demo = "app:main"
 
 [build-system]
 requires = ["uv_build>=0.12.3,<0.13.0"]
